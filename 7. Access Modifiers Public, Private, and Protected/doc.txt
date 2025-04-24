@@ -1,0 +1,7 @@
+'name' attribute was public public, so it can be accessed from outside the class, by just calling the attribute name on instance of the class.
+
+'_salary' attribute was protected, but since python considers us adult we can easily access it from outside the class, with instance object name followed by single underscore and then the attribute name.
+
+'__ssn' attribute was private, but since python considers us adult we can easily access it from outside the class, with instance object name followed by dsingle underscore and then the class name and then double underscore and then the attribute name.
+
+We can also access private method using getattr function like this: getattr(developer, '_Employee__ssn')
