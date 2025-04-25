@@ -23,12 +23,6 @@ print(D.mro()) # Show B
 
 # So, when we call d.show(), Python looks for show() in this order:
 
-#       A
-#     /   \
-#    B     C
-#     \   /
-#       D
-
 # D → no method defined here.
 
 # B → ✅ show() found here, so it executes this.
@@ -38,3 +32,12 @@ print(D.mro()) # Show B
 # A → not checked since already resolved.
 
 # object → not needed.
+
+
+# Diamond Inheritance:
+
+#       A
+#     /   \
+#    B --> C
+#     \   /
+#       D
