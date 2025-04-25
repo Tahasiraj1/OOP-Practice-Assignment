@@ -16,8 +16,8 @@ class Multiplier:
 double = Multiplier(5)
 triple = Multiplier(5)
 
-print(callable(double))
-print(callable(triple))
+print(callable(double)) # True
+print(callable(triple)) # True
 
-print(double(2))
-print(triple(3))
+print(double(2)) # 10
+print(triple(3)) # 15
